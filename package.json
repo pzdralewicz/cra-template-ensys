@@ -1,0 +1,22 @@
+{
+  "name": "cra-template-ensys",
+  "version": "1.0.1",
+  "description": "Base CRA template for Ensys project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzdralewicz/cra-template-ensys.git"
+  },
+  "keywords": [
+    "cra",
+    "template"
+  ],
+  "author": "pzdralewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pzdralewicz/cra-template-ensys/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
