@@ -23,7 +23,9 @@ module.exports = {
   },
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
   testEnvironment: 'jest-environment-jsdom',
-  testPathIgnorePatterns: ["/node_modules/", "/cypress/"],
+  testPathIgnorePatterns: ["/node_modules/"],
+  clearMocks: true,
+  restoreMocks: true,
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
   }
