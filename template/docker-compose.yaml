@@ -1,0 +1,12 @@
+version: "3.8"
+
+networks:
+  internal:
+    driver: bridge
+    name: ensys-dev
+services:
+  project_name:
+    container_name: ensys-project
+    image: ensys-project
+    networks:
+      - internal

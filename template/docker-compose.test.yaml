@@ -1,0 +1,21 @@
+version: "3.8"
+
+networks:
+  internal:
+    driver: bridge
+    name: ensys-test
+services:
+  project_name:
+    container_name: ensys-project
+    image: ensys-project
+    build:
+      target: production
+      context: .
+      args:
+        KEYCLOAK_AUTH_URL: ""
+        KEYCLOAK_REALM: "ensys"
+        KEYCLOAK_CLIENT_ID: "ensys-users"
+    networks:
+      - internal
+    expose:
+      - 80
