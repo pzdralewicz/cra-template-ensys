@@ -12,7 +12,7 @@ services:
       target: production
       context: .
       args:
-        KEYCLOAK_AUTH_URL: "https://test.ensys.smartfactor.com.pl/auth"
+        KEYCLOAK_AUTH_URL: ""
         KEYCLOAK_REALM: "ensys"
         KEYCLOAK_CLIENT_ID: "ensys-users"
     networks:

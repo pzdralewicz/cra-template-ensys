@@ -5,7 +5,7 @@ services:
     container_name: ensys-project
     image: ensys-project
     environment:
-      REACT_APP_KEYCLOAK_AUTH_URL: "https://test.ensys.smartfactor.com.pl/auth"
+      REACT_APP_KEYCLOAK_AUTH_URL: ""
       REACT_APP_KEYCLOAK_REALM: "ensys"
       REACT_APP_KEYCLOAK_CLIENT_ID: "ensys-users"
       CHOKIDAR_USEPOLLING: "true"

@@ -12,6 +12,10 @@
 **docker-compose.override.yaml**
 - project_name (change key name)
 
+**docker-compose.remote-dev.yaml**\
+**docker-compose.test.yaml**
+- fill AUTH_URLs
+
 
 ## Make sure to customize:
 
