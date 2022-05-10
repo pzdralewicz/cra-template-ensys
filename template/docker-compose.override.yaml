@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  project_name:
+    environment:
+      REACT_APP_KEYCLOAK_AUTH_URL: "http://localhost:8081/auth"
+      REACT_APP_KEYCLOAK_REALM: "ensys"
+      REACT_APP_KEYCLOAK_CLIENT_ID: "ensys-users"
+      CHOKIDAR_USEPOLLING: "true"
+    build:
+      target: development
+      context: .
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000
